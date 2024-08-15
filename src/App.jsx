@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Card from './Components/Card';
 
+//Comienza la app
 function App() {
   const [animal, setAnimal] = useState({
     nombre: '',
@@ -32,7 +33,7 @@ function App() {
           <h1>Formulario de Animales</h1>
           <form onSubmit={handleSubmit}>
           <div className='Jleft'>
-          <label>
+          <label className="mt10">
               Animal:
               <input type="text" name="nombre" value={animal.nombre} onChange={handleChange} />
             </label>
@@ -45,7 +46,7 @@ function App() {
           </div> 
             <br />
             <br />
-            <button type="submit">Registrar</button>
+            <button type="submit">Enviar</button>
             <br />
             <br />
             {error && <p className='TextRed'>Error: Por favor chequea que la información sea correcta</p>}
