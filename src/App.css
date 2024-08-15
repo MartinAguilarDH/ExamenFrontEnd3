@@ -40,3 +40,17 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.contenedor {
+  background-color: lightgreen;
+  padding: 20px;
+}
+
+.Jleft {
+  text-align: left;
+}
+
+.TextRed {
+  color: red;
+}
